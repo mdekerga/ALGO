@@ -41,7 +41,7 @@ int recursive_binary_search(vector<int>& nums,int low,int high,int target){
             return mid;
         }
 
-        if(nums[mid] < x){
+        if(nums[mid] < target){
             return recursive_binary_search(nums,mid+1,high,target);
         }
 
